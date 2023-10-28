@@ -1,0 +1,293 @@
+/* Estilos generales */
+
+body {
+    font-family: 'montserrat';
+    color: #1b392c;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    margin: auto;
+    background: #aec4c4;
+
+    display: flex;
+    justify-content: center;
+    /* Centrar el contenido de las secciones */
+    align-items: center;
+    /* Complemento al anterior de centrar el contenido */
+    text-align: center;
+
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 200px;
+}
+
+.container-header {
+    width: 460px;
+    height: 150px;
+    position: absolute;
+    padding: 0 20px 40px 20px;
+    background: white;
+}
+
+/* Estilo para el segundo título en la cabecera */
+header p {
+    font-size: 24px;
+    /* Aumentar, disminuir tamaño de fuente */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+    /* Centrar el texto en la barra de navegación */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Cambiar el color del texto de las pestañas */
+nav a {
+    color: #1b392c;
+    font-weight: bold;
+    text-decoration: none;
+    /* Quitar subrayado de los enlaces */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+    /* Centrar el contenido de las secciones */
+}
+
+.lema {
+    position: relative;
+    margin: auto;
+    background: #f2edd1;
+    /*font-style: italic;         /* Font de esta sección: Itálica o se puede poner en el HTML */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centrar el contenido de las secciones */
+    align-items: center;
+    /* Complemento al anterior de centrar el contenido */
+    text-align: center;
+
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.lema-box {
+    width: 700px;
+    height: 200px;
+}
+
+/* Estilos específicos para la sección de servicios */
+
+#services {
+    position: relative;
+    margin: auto;
+    background-color: #fffdf0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* Centrar el contenido de las secciones */
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+.services-box {
+    width: 50%;
+    text-align: justify;
+}
+
+#portfolio {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    text-align: center;
+    background: #aec4c4;
+    padding: 15px;
+
+    break-inside: avoid;
+}
+
+/* titulo del contenedor */
+.item1 {
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
+
+/* titulo del item */
+.item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+/* descripcion del item */
+.item3 {
+    grid-column: 2 / 3;
+    grid-row: 2;
+    text-align: justify;
+}
+
+/* icono del item */
+.item4 {
+    grid-column: 3;
+    grid-row: 2;
+    place-self: center;
+}
+
+/* titulo del item */
+.item5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* descripcion del item */
+.item6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: justify;
+}
+
+/* icono del item */
+.item7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    place-self: center;
+}
+
+/* Estilos específicos para la sección de about */
+#about {
+    position: relative;
+    margin: auto;
+    background-color: #f2edd1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* Centrar el contenido de las secciones */
+    align-items: center;
+    text-align: center;
+
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.about-text1 {
+    width: 50%;
+    text-align: justify;
+    padding: 30px;
+}
+
+
+/* Estilo para la imagen hover */
+.hover-image {
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Estilo para la imagen en estado hover (cambiar a otro color) */
+.hover-image:hover {
+    filter: grayscale(0%) sepia(100%) saturate(1000%) hue-rotate(0deg);
+}
+
+/* Estilo para el texto de la imagen hover */
+.img-project1 {
+    text-align: center;
+}
+
+.img-project2 {
+    text-align: center;
+}
+
+/* Estilo para el contenedor de la imagen hover*/
+.image-container {
+    position: relative;
+    display: flexbox;
+}
+
+/* Estilo para la imagen hover y el texto dentro de la imagen */
+.image-text {
+    display: none;
+    /* Ocultar el texto por defecto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(167, 233, 96, 0.977);
+    /* Color transparente de la imagen, cuando se pasa el cursor por encima */
+    padding: 10px 1px;
+    color: white;
+    /* color del texto dentro de la imagen, cuando se pasa el cursor por encima de la imagen */
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* Estilo para mostrar el texto al pasar el cursor sobre el contenedor de la imagen */
+.image-container:hover .image-text {
+    display: block;
+    /* Mostrar el texto al pasar el cursor sobre el contenedor de la imagen */
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+    background-color: #fffdf0;
+    /* color de contacto background */
+    text-align: center;
+    padding: 30px;
+}
+
+img {
+    display: block;
+}
+
+img {
+    width: 50%;
+    margin: auto;
+}
+
+#portfolio img {
+    width: 15%;
+    margin: auto;
+}
+
+#info_contacto span,
+p {
+    display: inline-block;
+    vertical-align: middle;
+    /* Para alinear verticalmente el icono y el texto */
+    margin-right: 10px;
+    /* Espacio entre el icono y el texto (ajusta según sea necesario) */
+}
+
+.graph1 {
+    width: 100%;
+    padding: 15px;
+    justify-content: center; /* Centrar el contenido de las secciones */
+    align-items: center;
+    overflow: auto;
+}
+
+.backhome {
+    display: inline-block;
+    background-color: #aec4c4;
+    padding: 15px;
+    text-decoration: none;
+}

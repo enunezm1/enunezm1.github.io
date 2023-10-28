@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: #2196F3;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+
+        .main {
+            background-color: #f1f1f1;
+            padding: 20px;
+            float: left;
+            width: 60%;
+            /* The width is 60%, by default */
+        }
+
+        .right {
+            background-color: #04AA6D;
+            padding: 20px;
+            float: left;
+            width: 20%;
+            /* The width is 20%, by default */
+        }
+
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .main,
+            .right {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
+
+
+    <title>Mi Proyecto 1</title>
+    <link rel="stylesheet" , href="styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <header>
+
+        <div class="container-header">
+            <h1>Eduardo Nuñez Marcos</h1>
+            <p>Data Analyst</p>
+        </div>
+    </header>
+</body>
+
+<div id="about">
+    <div class="about-tit">
+        <span>
+            <h2>Project 2</h2>
+        </span>
+    </div>
+
+    <div class="graph1">
+        <iframe src="files/Dashboard_1.pdf" height="600px" width="830px"></iframe>
+        <!-- <p>I have two university degrees: first, BSc. in Industrial Engineering, and recently a BA. in Education. I think I am a lifelong learner.
+        </p>  -->
+    </div>
+
+    <div class='returnhome'>
+        <a href="index.html#portfolio" class="backhome">Return</a>
+
+    </div>
+</div>
+
+<footer id="contact">
+    <div>
+        <h2>Contact</h2>
+        <address id="info_contacto">
+            <span class="material-symbols-outlined">smartphone</span>
+            <p>(506) 8532-5123 &nbsp;&nbsp;&nbsp;</p>
+
+            <span class="material-symbols-outlined">alternate_email</span>
+            <a style="color: #1b392c;" href="mailto:tdnenunez@gmail.com">tdnenunez@gmail.com</a>
+        </address>
+        <h6>&copy; 2023 by Eduardo Nuñez. All rights reserved.</h6>
+    </div>
+</footer>
